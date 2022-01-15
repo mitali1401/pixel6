@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" type="text/css" href="assign.css">
+</head>
+
+<body>
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+    <script src="assign.js">
+        
+    </script>
+    <div clas="page-wrap">
+        <div class="logIn">
+            <div class="details">
+                <input type="name" id="name" placeholder="Enter your name" autocomplete="off" onkeypress="validate()"
+                    onkeydown="chkName()">
+                <span id="lblError" style="color: red"></span>
+
+                <input type="email" id="email" placeholder="Enter your email" autocomplete="off" required
+                    onkeydown="emailValidate()">
+                <span id="lblError2" style="color: red"></span>
+
+                <input type="tel" id="text" placeholder="Enter your number" autocomplete="off" required
+                    onkeydown="phoneNumberFormatter()">
+                <div class="logo">
+
+                    <img id="logoo" style="display:none" src="#">
+                </div>
+
+                <div class="lbl">
+
+                    <span id="lblError3" style="color: red"></span>
+                </div>
+
+            </div>
+            <button class="btn" onclick="onSubmit()">Submit</a></button>
+
+
+        </div>
+
+    </div>
+    
+
+
+</body>
+
+</html>
