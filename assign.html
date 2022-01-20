@@ -16,12 +16,12 @@
     <div clas="page-wrap">
         <div class="logIn">
             <div class="details">
-                <input type="name" id="name" placeholder="Enter your name" autocomplete="off" onkeypress="validate()"
-                    onkeydown="chkName()">
+                <input type="name" id="name" placeholder="Enter your name" autocomplete="off" 
+                    onblur="chkName()">
                 <span id="lblError" style="color: red"></span>
 
                 <input type="email" id="email" placeholder="Enter your email" autocomplete="off" required
-                    onkeydown="emailValidate()">
+                    onblur="emailValidate()">
                 <span id="lblError2" style="color: red"></span>
 
                 <input type="tel" id="text" placeholder="Enter your number" autocomplete="off" required
@@ -33,7 +33,8 @@
 
                 <div class="lbl">
 
-                    <span id="lblError3" style="color: red"></span>
+                    <span id="lblError3" style="color: red"></span> 
+                    <span id="lblstate" style="color: red"></span>
                 </div>
 
             </div>
